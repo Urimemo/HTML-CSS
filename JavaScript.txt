@@ -1,0 +1,189 @@
+Objeto Math:
+
+	___Metodos___
+	- sqrt() - raiz cuadrada;
+	- cbrt() - raiz cubica;
+	- max() - devuelve el num. mas grande;
+	- min() - devuelve el num. mas pequeño;
+	- random();
+	- round() - redondear al num. entero mas cercano;
+	- fround() - redondea al flotante menos preciso;
+	- floor() - devuelve el entero mas grande menor que o igual a un número;
+	- trunc() - truncar;
+
+	___propiedades__
+	- PI
+	- SQRT1_2 - raiz de 1/2;
+	- SQRT2 - raiz de 2;
+
+	- E - constante de euler;
+	- LN2 - logaritmo natural de 2: 0.693;
+	-LN10 - ln de 10;
+	- LOG2E - log de E en base 2;
+	- LOG10E - logaritmo de E en base 10;
+
+##################################################################################################
+
+Otros métodos:
+	- variable.forEach(variable => console.log(variable))
+
+####################################################################################################
+Metodos de cadenas:
+
+	- concat() - junta 2 cadenas
+
+	- startsWith(), endsWith(), incudes(), indexOf(), lastIndexOf();
+	- split() - divide la cadena como queramos;
+	- substring() - devuelve un cacho de cadena;
+	- toLowerCase() - pasa a minuscula;
+	- toUpperCase() - pasa a mayúscula;
+	- toString() - convierte en String;
+	- trim() - elimina los espacios;
+	- trimEnd() - elimina espacios al final;
+	- trimStart() - elimina espacios al principo
+	- valueOf() - retorna el valor primitivo de un objeto String;
+
+Metodos de arrays:
+	
+	____Transformadores____
+	-pop() - elimina y devuelve el último elemento del array;
+	- shift() - elimina el primer elemento y lo devuelve;
+	- push() - agrega un elemento al array al final;
+	- reverse() - invierte el orden de los elemntos de un array;
+	- unshift() - agrega uno o más elementos de array y devuelve la longitud;
+	- sort() - ordena los elementos del array;
+	- splice() - cambia el array añadiendo o eliminando elementos del array;
+
+	____Accesores____
+	- join() - une todos los elementos del array y devuelve un String;
+	
+	___Repeticion___
+	- filter() - ejecuta la funcion asignada para cada elementi del array;
+	- forEach() - ejecuta la funcion asignada para cada elemento del array;
+
+###################################################################################################
+
+Metodos de consola:
+console.clear() - limpiar la consola;
+	console.error() - (se ejecuta en el codigo) error(String s)
+	console.info() - emite un mensaje informativo;
+	console.log() - emite un mensaje de depuracion, cas identico a info();
+	console.table() - hace una tabla a partir de un array;
+	console.warn() - mensaje de cuidado;
+	console.dir() - info mejorado++, muy útil;
+	console.count() - sirve para contar cuantas veces se ha ejecutado .count();
+	console.group() - para crear un grupo en consola console.group(String nombreGrupo);
+	console.groupEnd() - Acabar el grupo;
+	
+	console.time() - habilitas la cuenta, .timeLog() inicias la cuenta , .timeEnd() acabas la cuenta; se usa en -->
+--> el codigo para contar;
+
+	___Cambiar el estilo de letra___
+	console.log(%cString mensaje, "color: red;", "background-color: #fff", "padding: 30px");
+
+#################################################################################################
+
+Seleccionar Elementos:
+
+	- document.getElementbyId("nombre de ID");
+	- document.getElementsbyTagName("nombre de la etiqueta");
+	- document.querySelector(".nombreClase / #nombreID");
+
+#####################################################################################################
+
+Metodos editar elementos:
+	- getAttribute("atributo");
+	- setAttribute("atributo", "nuevo valor")
+	- removeAttribute("atributo");
+
+#######################################################################################################
+
+Atributos globales:
+	- contentEditable - indica si el elemento puede ser modificable;
+	- dir - indica la direccionalidad del texto;
+	- hidden - indica si el elemento aún no es relevante;
+	- style - contiene declaraciones de estilo css para ser aplicadas al elemento;
+	- tabindex - Contiene un texto con información relacionanda al elemento al que pertenece.
+	- title - titulo que s emuestra al poner el cursor sobre una imagen o elemento en el DOM;
+
+#######################################################################################################
+
+Atributos de inputs:
+	- classname
+	- value
+	- type
+	- accept
+	- form
+	- minlenght
+	- placeholder
+	- required : sirve para qu eno puedas enviar informacion vacia al input
+
+	Ejemplo: 
+		const input = document.querySelector(".input");
+		input.type = "color";
+
+########################################################################################################
+
+Clases, classList y Metodos de classlist:
+	- classList.add() - añade una clase
+	- remove() - borra una clase 
+	- item() - devuelve la clase del elemento especificado
+		titulo.classList.item(1); si tiene muchas clases se indica con numeros como parametros
+		como se haría con una matriz
+
+	- contains() - verifica si ese elemento posee o no la clase especificada
+	- replace() - remplaza una clase por otra
+	- toggle() - si no tiene la clase especificada, la agrega, y si ya la tinene entonces la elimina
+
+########################################################################################################
+
+Obtener y modificar Elementos:
+	- textContent; devuelve el texto del nodo indicado NO HTML
+	- innerHTML; devuelve el contenido html (se puede mostrar con un alert())
+	- outerHTML; devuelve el contenido html incluyendo la etiqueta que engloba el texto. (mostrar con alert())
+
+########################################################################################################
+
+Crear elementos: 
+	- document.createElement("elemento en mayusculas") - el perámetro debe ser en mayúsculas todo
+	- document.createTextNode() - crear texto dentro de una etiqueta
+	- document.createDocumentFragment() - ejemplo de uso en mi github: repositorio HTML-CSS carpeta:
+						usar createdocumentfragment()
+	- document.appendChild() - meter en una etiqueta un texto creado por ej. por createTextNode
+
+########################################################################################################
+
+Obtencion y modificacion de Childs (hijos):
+	- firstElementChild - primer elemento hijo
+	- lastElementChild - ultimo elemento hijo
+	- childNodes - devuelve todos los nodos en forma de lista
+	- children - devuelve únicamente las etiquetas html	
+
+########################################################################################################
+
+Metodos Childs(hijos):
+	- appendChild() - sirve para meter un texto en un elemento html / o sinó para meter un elemento en una clase
+	- replaceChild() - sirve para remplazar un elemento hijo
+	- removeChild() - sirve para remover un elemento hijo	
+	- hasChildNodes() - sirve para comprovar si el elemto has or hasn't childnodes.
+
+########################################################################################################
+
+propiedades de parents (padres):
+	- parentElement - para saber el elemento padre
+	- parentNode - para saber el nodo padre
+
+########################################################################################################
+
+Propiedades de Siblings(hermanos):
+	- nextSibling
+	- previousSibing
+	- nextElementSibling
+	- previousElementsSibling
+
+########################################################################################################
+
+Nodo - extras:
+	- closest()
+
+########################################################################################################
