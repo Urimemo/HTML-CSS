@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:  'Dancing Script';
+}
+
+header {
+    width: 85%;
+    height: 25%;
+    padding: 5rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:0 auto;
+    background-image: url("images/header-img.png");
+    background-size: cover;
+}
+
+
+.logo img {
+    width: 60px;
+    border-radius: 50%;
+}
+
+.logo {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    width: 450px;
+    display: flex;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 29px;
+    margin-right: 1.5rem;
+}
+
+.menu a:hover {
+    color: red;
+}
+
+.portfolio {
+    margin-top: 3rem;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.portfolio h1 {
+    font-size: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+footer {
+    width: 85%;
+    margin: 0 auto;
+    color: #000;
+    padding: 4rem;
+    text-align: center;
+}
+
+.ilustracion {
+    width: 95%;
+    margin:0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ilustracion-image {
+    width: 60%;
+    height: 450px;
+    object-fit: cover;
+    display: inline-block;
+    padding: 1rem;
+}
+    
+.ilustracion-texto {
+    width: 40%;
+    display: inline-block;
+    padding: 1rem;
+}
+
+.ilustracion-texto h3 {
+    font-size: 3rem;
+}
+
+.ilustracion p {
+    font-size: 1.5rem;
+    display: inline;
+}
+
+/*Return up*/
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(7, 0, 15); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 1.5rem; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: rgb(37, 37, 37); /* Add a dark-grey background on hover */
+  }
+
+/*Smooth Scroll*/
+html {
+    scroll-behavior: smooth;
+  }
