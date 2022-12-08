@@ -1,0 +1,171 @@
+* {
+	font-family: Verdana;
+}
+
+body {
+	background-color: #000;
+	overflow-x: hidden;
+}
+
+
+p {
+	color: #fff;
+}
+
+h2 {
+	color: #fff;
+}
+
+.banner {
+	background: url("https://i.pinimg.com/originals/c8/67/f1/c867f118b2c4e00738b3743700dbf3cd.jpg");
+	width: 100%;
+	min-width: 500px;
+	padding: 5rem;
+	min-height: 96px;
+	background-position: 0 70%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	color: yellow;
+	background-color: rgba(50, 50, 50, .8);
+	background-blend-mode: soft-light;
+	font-size: 25px;
+}
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	margin: 0;
+	min-height: 4rem;
+	background-color: #262626;
+	border: 3px solid red;
+	flex-wrap: wrap;
+	height: 70px;
+}
+
+.barra {
+	min-width: 410px;
+	flex-wrap: wrap;
+}
+
+.title {
+	margin-left: 2rem;
+	min-width: 218px;
+}
+
+.title h2 {
+	font-size: 2rem;
+	color: white;
+}
+
+.barra a {
+	text-decoration: none;
+	color: #fff;
+	margin: 0 15px;
+}
+
+.barra a:hover {
+	color: red;
+}
+
+@media (max-width: 700px) {
+	.menu {
+		flex-direction: column;
+	}
+
+	.flex-container {
+		flex-direction: column;
+		align-items: center;
+		margin: 0;
+	}
+
+	.seccion {
+		align-items: center;
+	}
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.seccion {
+	flex: 3;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 15px;
+}
+
+.seccion-article {
+	width: 425px;
+	padding: 17px;
+	margin: 5px;
+	background-color: #262626;
+	outline: 3px solid red;
+	border-radius: 4px;
+}
+
+.article-img {
+	width: 100%;
+	height: 200px;
+	outline: 3px solid #fff;
+	margin-bottom: 6px;
+}
+
+.article-img img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.img-minecraft {
+	object-position: 0 35%;
+}
+
+.img-rtype {
+	object-position: 0;
+}
+
+.aside {
+	flex: 1;
+	margin: 20px;
+	height: 500px;
+	min-width: 370px;
+	max-width: 370.5px;
+	position: sticky;
+	top: 20px;
+	background-color: #262626;
+	outline: 3px solid red;
+	padding: 20px;
+	border-radius: 4px;
+}
+
+.footer {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 501px;
+	min-height: 500px;
+	background-color: whitesmoke;
+}
+
+.footer-container {
+	margin: 40px ;
+}
+
+.footer-container-article {
+	margin: 5px;
+	padding: 20px;
+	border-bottom: 3px solid gray;
+
+}
+
+.footer-container-article h2 {
+	color: #000;
+}
+
+.footer-container-article p {
+	color: #000;
+}

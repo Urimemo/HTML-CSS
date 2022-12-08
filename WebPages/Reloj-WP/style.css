@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:  'Source Code Pro', monospace;    
+    color: #fff;
+}
+
+.background-video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: center;
+    position: absolute;
+    z-index: -1;
+}
+
+.section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+    background-color: rgba(0,0,0,.7);
+    border-radius: 50%;
+    outline: 10px dotted rgba(228, 228, 228, 0.7);
+    width: 450px;
+    height: 450px;
+}
+
+.clock_row1 {
+    display: flex;
+    font-size: 4rem;
+    width: 180px;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock_seconds {
+    font-size: 3rem;
+}
+
+/*Responsive*/
+
+@media only screen and (max-width: 600px){
+    .clock {
+        width: 250px;
+        height: 250px;
+    }
+}
