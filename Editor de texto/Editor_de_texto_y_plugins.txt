@@ -1,7 +1,0 @@
-Editor: 
-atom: https://atom.io 
-
-plugins: 
-- por defecto (HTML, CSS) no necesitan mas
-- JavaScript: https://atom.io/packages/atom-ternjs
-- preview de la pagina: https://atom.io/packages/atom-html-preview    ctrl+shift+h
